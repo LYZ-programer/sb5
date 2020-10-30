@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h3>董新贺</h3>
+    <!-- 遍历数据 -->
+    <table>
+        <tr th:each="user:${users}">
+            <td>[[ ${user.t_id} ]]</td>
+            <td th:text="${user.ename}"></td>
+            <td th:text="${user.salary}"></td>
+            <td th:text="${user.hiredate}"></td>
+        </tr>
+    </table>
+
+</body>
+</html>
