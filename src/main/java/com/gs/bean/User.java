@@ -18,7 +18,7 @@ import java.io.Serializable;
 public class User implements Serializable {
 
     @Id
-//    @Column(name = "t_id")
+    @Column(name = "t_id")
     private Integer t_id;
     private String ename;
     private Double salary;
